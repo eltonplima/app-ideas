@@ -22,6 +22,28 @@ header {
   height: 500px;
 }
 
+.border-radius-top-left {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  text-align: right;
+}
+
+.border-radius-top-right {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.border-radius-bottom-left {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  text-align: right;
+}
+
+.border-radius-bottom-right {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
 textarea {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
