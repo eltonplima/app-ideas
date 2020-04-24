@@ -1,9 +1,10 @@
 const inputs = document.querySelectorAll('input');
 
 for (input of inputs) {
-    input.addEventListener('keyup', update_border_radius)
+    input.addEventListener('input', update_border_radius)
 }
 
 function update_border_radius(event) {
-    console.log(event.target.value)
+    const target = event.target
+    target.value = target.value.replace(/[^0-9]/, '')
 }
