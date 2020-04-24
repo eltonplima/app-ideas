@@ -1,0 +1,33 @@
+body {
+  background: #63bafc;
+}
+
+header {
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1% 1fr 1%;
+}
+
+.border-radius-text {
+  grid-column-start: 2;
+  grid-row: 1 / span 3;
+  height: 500px;
+}
+
+textarea {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  height: 100%;
+  resize: none;
+  width: 100%;
+}
