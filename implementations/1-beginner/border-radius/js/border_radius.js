@@ -1,6 +1,22 @@
-const inputs = document.querySelectorAll('input');
+const bordersInputs = document.querySelectorAll('div[class*=border-] input')
+const bordersRadiusNames = [
+    'border-top-left-radius',
+    'border-top-right-radius',
+    'border-bottom-left-radius',
+    'border-bottom-right-radius'
+]
 
-for (input of inputs) {
+window.addEventListener('load', () => {
+    const border_radius_element = document.querySelector('#border-radius-properties')
+    const computedStyle = getComputedStyle(border_radius_element)
+    for (let radiusName of bordersRadiusNames) {
+        document.querySelector(`.${radiusName}`)
+            .querySelector('input')
+            .value = computedStyle.getPropertyValue(radiusName)
+    }
+})
+
+for (input of bordersInputs) {
     input.addEventListener('input', update_border_radius)
 }
 
