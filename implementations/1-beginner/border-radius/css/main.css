@@ -22,24 +22,24 @@ header {
   height: 500px;
 }
 
-.border-radius-top-left {
+.border-top-left-radius {
   grid-column-start: 1;
   grid-row-start: 1;
   text-align: right;
 }
 
-.border-radius-top-right {
+.border-top-right-radius {
   grid-column-start: 3;
   grid-row-start: 1;
 }
 
-.border-radius-bottom-left {
+.border-bottom-left-radius {
   grid-column-start: 1;
   grid-row-start: 3;
   text-align: right;
 }
 
-.border-radius-bottom-right {
+.border-bottom-right-radius {
   grid-column-start: 3;
   grid-row-start: 3;
 }
