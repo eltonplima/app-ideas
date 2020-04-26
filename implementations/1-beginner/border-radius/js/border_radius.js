@@ -22,7 +22,7 @@ function load_initial_radius_from_element(element) {
 }
 
 function bind_events() {
-    for (input of bordersInputs) {
+    for (let input of bordersInputs) {
         input.addEventListener('input', update_border_radius)
     }
 }
