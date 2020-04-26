@@ -42,7 +42,12 @@
     <input id="bottom-right">
   </div>
 </main>
-<script src="js/border_radius.js"></script>
+<script type="module">
+  import BorderRadius from './js/border_radius.js'
+
+  const borderRadius = new BorderRadius()
+  borderRadius.run()
+</script>
 </body>
 
 </html>
