@@ -7,17 +7,24 @@ const bordersRadiusNames = [
 ]
 
 window.addEventListener('load', () => {
+    bind_events()
     const border_radius_element = document.querySelector('#border-radius-properties')
-    const computedStyle = getComputedStyle(border_radius_element)
+    load_initial_radius_from_element(border_radius_element)
+})
+
+function load_initial_radius_from_element(element) {
+    const computedStyle = getComputedStyle(element)
     for (let radiusName of bordersRadiusNames) {
         document.querySelector(`.${radiusName}`)
             .querySelector('input')
             .value = computedStyle.getPropertyValue(radiusName)
     }
-})
+}
 
-for (input of bordersInputs) {
-    input.addEventListener('input', update_border_radius)
+function bind_events() {
+    for (input of bordersInputs) {
+        input.addEventListener('input', update_border_radius)
+    }
 }
 
 function filter_valid_values(value) {
