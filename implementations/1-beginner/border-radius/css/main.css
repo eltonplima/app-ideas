@@ -45,7 +45,6 @@ header {
 }
 
 textarea {
-  -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
   box-sizing: border-box;
